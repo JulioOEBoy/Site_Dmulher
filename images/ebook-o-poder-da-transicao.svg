@@ -1,0 +1,19 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" rx="42" fill="#F7EDE4"/>
+  <rect x="76" y="76" width="748" height="1048" rx="28" fill="#FFFFFF"/>
+  <rect x="120" y="128" width="660" height="920" rx="26" fill="#F3E2D7"/>
+  <path d="M318 278C318 236.026 350.026 204 392 204H544C586.026 204 618 236.026 618 278V318H318V278Z" fill="#C46A63"/>
+  <rect x="308" y="338" width="284" height="440" rx="18" fill="#FFFFFF"/>
+  <rect x="334" y="366" width="232" height="96" rx="12" fill="#F2C7B2"/>
+  <rect x="334" y="486" width="232" height="18" rx="9" fill="#E7B49B"/>
+  <rect x="334" y="526" width="182" height="18" rx="9" fill="#E7B49B"/>
+  <rect x="334" y="566" width="208" height="18" rx="9" fill="#E7B49B"/>
+  <rect x="334" y="622" width="158" height="18" rx="9" fill="#E7B49B"/>
+  <rect x="334" y="662" width="206" height="18" rx="9" fill="#E7B49B"/>
+  <rect x="334" y="702" width="168" height="18" rx="9" fill="#E7B49B"/>
+  <circle cx="338" cy="858" r="58" fill="#A86A63"/>
+  <path d="M300 916C322 840 398 808 454 820C512 832 548 898 548 916H300Z" fill="#8A4E4A"/>
+  <text x="450" y="402" text-anchor="middle" fill="#8F4F49" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">O Poder da</text>
+  <text x="450" y="446" text-anchor="middle" fill="#8F4F49" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">Transição</text>
+  <text x="450" y="740" text-anchor="middle" fill="#6F4A3A" font-family="Arial, sans-serif" font-size="24" font-weight="700">E-BOOK</text>
+</svg>
