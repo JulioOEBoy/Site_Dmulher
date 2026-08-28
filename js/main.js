@@ -138,6 +138,9 @@
     // ---------- Doctoralia Floating Button ----------
     const doctoraliaFloatingBtn = document.getElementById('zl-url');
     if (doctoraliaFloatingBtn) {
+        const footer = document.getElementById('rodape');
+        const FOOTER_BUFFER = 12;
+
         function updateDoctoraliaFloatingState() {
             const revealThreshold = Math.max(220, window.innerHeight * 0.35);
             if (window.scrollY > revealThreshold) {
@@ -145,11 +148,42 @@
             } else {
                 doctoraliaFloatingBtn.classList.remove('is-visible');
             }
+            clampDoctoraliaPosition();
+        }
+
+        function clampDoctoraliaPosition() {
+            if (!footer || !doctoraliaFloatingBtn.classList.contains('is-visible')) {
+                doctoraliaFloatingBtn.style.position = '';
+                doctoraliaFloatingBtn.style.top = '';
+                doctoraliaFloatingBtn.style.bottom = '';
+                return;
+            }
+            const btnHeight = doctoraliaFloatingBtn.offsetHeight;
+            const margin = 20;
+            const footerTop = footer.getBoundingClientRect().top + window.scrollY;
+            const limit = footerTop - btnHeight - margin; // topo (no documento) onde o botão trava
+            const currentTop = window.scrollY + window.innerHeight - btnHeight - margin; // onde ele estaria se fixo
+
+            if (currentTop >= limit) {
+                // Chegou no footer: trava (absolute) no topo do footer
+                doctoraliaFloatingBtn.style.position = 'absolute';
+                doctoraliaFloatingBtn.style.top = limit + 'px';
+                doctoraliaFloatingBtn.style.bottom = 'auto';
+            } else {
+                // Ainda rolando a página: acompanha a viewport (fixed)
+                doctoraliaFloatingBtn.style.position = 'fixed';
+                doctoraliaFloatingBtn.style.top = 'auto';
+                doctoraliaFloatingBtn.style.bottom = margin + 'px';
+            }
         }
 
         updateDoctoraliaFloatingState();
         window.addEventListener('scroll', updateDoctoraliaFloatingState);
         window.addEventListener('resize', updateDoctoraliaFloatingState);
+        window.addEventListener('load', function () {
+            updateDoctoraliaFloatingState();
+            clampDoctoraliaPosition();
+        });
     }
 
     // ---------- Smooth Scroll (fallback para browsers antigos) ----------
