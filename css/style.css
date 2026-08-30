@@ -276,6 +276,17 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .hero-label {
+        margin-bottom: 10px;
+    }
+    .hero-title {
+        margin-bottom: 10px;
+        font-size: clamp(1.6rem, 6.4vw, 2.2rem);
+    }
+    .hero-text {
+        margin-bottom: 16px;
+        font-size: 0.98rem;
+    }
 }
 
 .hero-content {
