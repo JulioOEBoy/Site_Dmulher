@@ -152,7 +152,7 @@ ul {
 }
 
 .logo img {
-    height: 160px;
+    height: 190px;
     width: auto;
 }
 
@@ -599,7 +599,7 @@ ul {
 
         .hero-content {
             max-width: 50%;
-            padding: 70px 18px 11vh;
+            padding: 70px 18px calc(env(safe-area-inset-bottom, 0px) + 6vh);
         }
 
         .hero-title {
@@ -716,6 +716,27 @@ ul {
     min-height: 520px;
 }
 
+/* ---------- Desktop (>=769px): Tratamentos + Programa + Livro cabem numa tela, escalando por altura ---------- */
+@media (min-width: 769px) {
+    .section-tratamentos {
+        padding: clamp(24px, 4vh, 56px) 0;
+    }
+    .tratamento-item {
+        min-height: clamp(90px, 12vh, 150px);
+    }
+    .section-title {
+        font-size: clamp(1.6rem, 3.2vh, 2.4rem);
+        margin-bottom: clamp(16px, 2.4vh, 40px);
+    }
+    .split-card {
+        padding: clamp(20px, 3.6vh, 50px) 0;
+        min-height: clamp(240px, 33vh, 440px);
+    }
+    .split-grid {
+        min-height: clamp(240px, 33vh, 440px);
+    }
+}
+
 .split-text {
     padding: 80px 40px;
     display: flex;
@@ -752,7 +773,7 @@ ul {
 
 #livro .split-text {
     justify-content: center;
-    min-height: 520px;
+    min-height: auto;
 }
 
 @media (max-width: 768px) {
@@ -994,7 +1015,8 @@ ul {
 }
 
 .cta-inner {
-    max-width: 1000px;
+    width: 85%;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -1057,6 +1079,9 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .cta-inner {
+        width: 92%;
+    }
     .cta-card {
         flex-direction: column;
         text-align: center;
@@ -1103,10 +1128,10 @@ ul {
 
 .footer-quote {
     font-family: var(--font-heading);
-    font-size: clamp(1.9rem, 3vw, 2.4rem);
+    font-size: clamp(2.2rem, 3.4vw, 3rem);
     font-style: italic;
     color: var(--brown-dark);
-    line-height: 1.5;
+    line-height: 1.45;
 }
 
 .footer-ref {
@@ -1659,7 +1684,7 @@ ul {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            padding: 112px 24px 11vh;
+            padding: 112px 24px calc(env(safe-area-inset-bottom, 0px) + 6vh);
         }
 
         .hero-label,
