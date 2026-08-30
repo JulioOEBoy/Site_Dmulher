@@ -201,7 +201,4 @@
         });
     });
 
-    // ---------- Tratamentos Lista (links suaves) ----------
-    // Não há mais carousel — os itens são links diretos.
-    // Evento opcional: scroll suave ao clicar (o browser já faz por padrão).
 })();
