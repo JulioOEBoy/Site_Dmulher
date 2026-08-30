@@ -1666,12 +1666,12 @@ ul {
             text-align: left;
             background: transparent;
             color: #000;
-            min-height: 48vh;
-            min-height: 48dvh;
+            min-height: 56vh;
+            min-height: 56dvh;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            padding: 48px 24px calc(env(safe-area-inset-bottom, 0px) + 44px);
+            padding: 96px 24px calc(env(safe-area-inset-bottom, 0px) + 60px);
         }
 
         .hero-label,
