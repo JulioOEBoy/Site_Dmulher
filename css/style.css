@@ -2182,3 +2182,16 @@ ul {
         font-size: 1.4rem;
     }
 }
+@media (max-width: 360px) {
+
+    .feature-item .feature-label {
+        font-size: 0.55rem;
+    }
+    #programa .split-card:first-child .btn{
+        font-size: 10px;
+    }
+    .depoimentos-slider{
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+}
