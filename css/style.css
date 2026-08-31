@@ -157,6 +157,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 32px;
+    z-index: 999;
 }
 
 .nav-list {
@@ -845,9 +846,9 @@ ul {
 
 .check-list li {
     padding: 8px 0;
-    padding-left: 28px;
+    padding-left: 15px;
     position: relative;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .check-list li::before {
@@ -2147,7 +2148,7 @@ ul {
     position: fixed;
     right: 20px;
     bottom: calc(20px + env(safe-area-inset-bottom));
-    z-index: 1200;
+    z-index: 998;
     display: inline-flex;
     align-items: center;
     justify-content: center;
