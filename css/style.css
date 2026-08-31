@@ -888,7 +888,7 @@ ul {
     }
     
     .livro-image-wrapper img {
-        max-width: 150px;
+        max-width: 300px;
     }
     
     .livro-image-wrapper.mobile-only {
@@ -1112,7 +1112,7 @@ ul {
 .site-footer {
     background: #F5F0E8;
     color: var(--brown-dark);
-    padding: 60px 0 0;
+    padding: 15px 0 0;
     text-align: center;
 }
 
@@ -1122,6 +1122,7 @@ ul {
     gap: 32px;
     padding-bottom: 40px;
     text-align: left;
+    background-color: ghostwhite;
 }
 
 .footer-brand {
@@ -2155,7 +2156,7 @@ ul {
     width: 64px;
     height: 64px;
     border-radius: 999px;
-    background: rgba(164, 145, 84, 0.82);
+    background: var(--gold);
     color: #ffffff;
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.45);
