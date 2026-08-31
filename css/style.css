@@ -1122,7 +1122,12 @@ ul {
     gap: 32px;
     padding-bottom: 40px;
     text-align: left;
-    background-color: ghostwhite;
+     background-image: linear-gradient(
+    to bottom,
+    #f5f0e8 0%,
+    #f8f4EE 5px,
+    #f8f4EE 100%
+  );
 }
 
 .footer-brand {
