@@ -1758,6 +1758,7 @@ ul {
     object-position: bottom right;
     pointer-events: none;
     animation: slideUpFade 0.9s ease-out 0.2s both;
+    margin-left: 80px;
 }
 
 @media (max-width: 768px) {
