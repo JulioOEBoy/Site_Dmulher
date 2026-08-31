@@ -901,7 +901,7 @@ ul {
 }
 
 .section-depoimentos {
-    padding: 100px 0;
+    padding: 100px 0 15px 0;
     background: #F5F0E8;
     text-align: center;
 }
@@ -1114,6 +1114,12 @@ ul {
     color: var(--brown-dark);
     padding: 15px 0 0;
     text-align: center;
+    background-image: linear-gradient(
+    to bottom,
+    #f5f0e8 0%,
+    #f8f4EE 5px,
+    #f8f4EE 100%
+  );
 }
 
 .footer-grid {
@@ -1122,12 +1128,7 @@ ul {
     gap: 32px;
     padding-bottom: 40px;
     text-align: left;
-     background-image: linear-gradient(
-    to bottom,
-    #f5f0e8 0%,
-    #f8f4EE 5px,
-    #f8f4EE 100%
-  );
+
 }
 
 .footer-brand {

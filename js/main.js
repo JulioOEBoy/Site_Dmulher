@@ -161,7 +161,7 @@
             const btnHeight = doctoraliaFloatingBtn.offsetHeight;
             const margin = 15;
             const footerTop = footer.getBoundingClientRect().top + window.scrollY;
-            const limit = footerTop - btnHeight; // topo (no documento) onde o botão trava
+            const limit = footerTop - btnHeight - margin; // topo (no documento) onde o botão trava
             const currentTop = window.scrollY + window.innerHeight - btnHeight - margin; // onde ele estaria se fixo
 
             if (currentTop >= limit) {
