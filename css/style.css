@@ -825,15 +825,22 @@ ul {
     color: var(--brown-dark);
 }
 
-.split-desc {
+.split-desc-direita {
     font-size: 1rem;
     opacity: 0.9;
     margin-bottom: 24px;
     line-height: 1.7;
 }
 
+.split-desc-esquerda {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 0px;
+    line-height: 1.7;
+}
+
 .check-list {
-    margin-bottom: 32px;
+    margin-bottom: 23.5px;
 }
 
 .check-list li {
