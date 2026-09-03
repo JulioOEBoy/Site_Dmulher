@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    // ---------- Menu Mobile ----------
+    // fiz o menu do celular aqui
     const menuToggle = document.getElementById('menu-toggle');
     const mainNav = document.getElementById('main-nav');
 
@@ -34,19 +34,19 @@
             }
         });
 
-        // Fechar ao clicar no overlay
+        // fiz pra fechar quando clicar na camada
         if (overlay) {
             overlay.addEventListener('click', closeMenu);
         }
 
-        // Fechar ao clicar em link
+        // fiz pra fechar quando clicar no link
         mainNav.querySelectorAll('a').forEach(function (link) {
             link.addEventListener('click', function () {
                 closeMenu();
             });
         });
 
-        // Fechar com ESC
+        // fiz pra fechar com ESC
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape' && mainNav.classList.contains('open')) {
                 closeMenu();
@@ -54,7 +54,7 @@
         });
     }
 
-    // ---------- Depoimentos Slider ----------
+    // fiz o carrosel de depooimentos aqui
     const slider = document.getElementById('depoimentos-slider');
     const dotsContainer = document.getElementById('depoimentos-dots');
     const prevBtn = document.querySelector('.depoimento-prev');
@@ -64,7 +64,7 @@
         const slides = Array.from(slider.querySelectorAll('.depoimento'));
         let currentIndex = 0;
 
-        // Criar dots
+        // fiz pra criar as bolinhas
         slides.forEach(function (_, i) {
             const dot = document.createElement('button');
             dot.type = 'button';
@@ -101,7 +101,7 @@
             });
         }
 
-        // Auto-play
+        // fiz pra tocar sozinho
         let autoPlay = setInterval(function () {
             goTo(currentIndex + 1);
         }, 8000);
@@ -117,7 +117,7 @@
         });
     }
 
-    // ---------- Header Scroll Effect ----------
+    // fiz o efeito de rolagem do cabecalho aqui
     const header = document.querySelector('.site-header');
     if (header) {
         const mobileHeaderQuery = window.matchMedia('(max-width: 768px)');
@@ -135,7 +135,7 @@
         mobileHeaderQuery.addEventListener('change', updateHeaderState);
     }
 
-    // ---------- Doctoralia Floating Button ----------
+    // fiz o botao flutuante da doctoralia aqui
     const doctoraliaFloatingBtn = document.getElementById('zl-url');
     if (doctoraliaFloatingBtn) {
         const footer = document.getElementById('rodape');
@@ -165,12 +165,12 @@
             const currentTop = window.scrollY + window.innerHeight - btnHeight - margin; // onde ele estaria se fixo
 
             if (currentTop >= limit) {
-                // Chegou no footer: trava (absolute) no topo do footer
+                // chegou no rodaape: trava em cima dele
                 doctoraliaFloatingBtn.style.position = 'absolute';
                 doctoraliaFloatingBtn.style.top = limit + 'px';
                 doctoraliaFloatingBtn.style.bottom = 'auto';
             } else {
-                // Ainda rolando a página: acompanha a viewport (fixed)
+                // ainda rolando a pagina: acompanha a tela
                 doctoraliaFloatingBtn.style.position = 'fixed';
                 doctoraliaFloatingBtn.style.top = 'auto';
                 doctoraliaFloatingBtn.style.bottom = margin + 'px';
@@ -186,7 +186,7 @@
         });
     }
 
-    // ---------- Smooth Scroll (fallback para browsers antigos) ----------
+    // fiz a rolagem suave pra navegadores antigos
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
